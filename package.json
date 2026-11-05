@@ -1,0 +1,17 @@
+{
+  "name": "carbon-arena",
+  "version": "0.5.0",
+  "private": true,
+  "description": "A local, AI-assisted strategy-game experiment with deterministic replays and verified tournaments",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "postinstall": "npm --prefix duel ci --ignore-scripts && node tools/build-entry-kit.cjs",
+    "start": "node competition/server.cjs --port 4327",
+    "test": "node --test --test-concurrency=1 competition/tests/*.test.cjs duel/tests/sandbox.test.cjs playable-v0.5/tests/*.test.js",
+    "test:practice": "node competition/tests/practice-rehearsal.cjs",
+    "test:demo": "node tests/browser-demo.cjs",
+    "test:championship": "node competition/tests/rehearsal.cjs",
+    "build:kit": "node tools/build-entry-kit.cjs"
+  },
+  "devDependencies": { "playwright": "1.62.1" }
+}

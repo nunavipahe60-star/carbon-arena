@@ -1,0 +1,13 @@
+node_modules/
+competition/data/
+competition/verification/
+Carbon-Arena-Competition-Entry-Kit-v1.zip
+*.log
+*.tmp
+.env
+.env.*
+!.env.example
+owner-key.json
+server.lock
+.DS_Store
+Thumbs.db

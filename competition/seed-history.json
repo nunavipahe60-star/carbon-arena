@@ -1,0 +1,9 @@
+{
+  "description": "Public fixture maps excluded from fresh draws. This release has a new, empty event archive.",
+  "seeds": [
+    1,
+    42,
+    314159,
+    2049928135
+  ]
+}
